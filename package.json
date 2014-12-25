@@ -1,0 +1,23 @@
+{
+  "name": "handlebars-plugin-grouping",
+  "version": "1.0.0",
+  "description": "A handlebars grouping iterator plugin to group collections into groups of definable size.",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//dhollenbeck/handlebars-plugin-grouping"
+  },
+  "keywords": [
+    "handlebars",
+    "helper",
+    "plugin"
+  ],
+  "author": "Daniel Hollenbeck",
+  "license": "MIT"
+}
