@@ -3,12 +3,10 @@ handlebars-plugin-grouping
 
 A grouping iterator plugin to group collections into groups of definable size.
 
-#Template Usage
+##Template Usage
 
+An example template to render a collection of thumbnails into a bootstrap grid row of 6 thumbnails per row.
 ```html
-{{!-- an example template to render a collection of thumbnails
-into a bootstrap grid row of 6 thumbnails per row. --}}
-
 {{#grouping thumbnails 6}}
 <div class="row">
 	<div class="row-fluid" title="Row {{@index}} of {{@groups}} contains {{@size}} thumbnails.">
@@ -23,11 +21,11 @@ into a bootstrap grid row of 6 thumbnails per row. --}}
 ```
 
 
-#Node.js
+##Node.js
 
 Installation:
 
-```javascript
+```bash
 npm install handlebars-plugin-grouping --save
 ```
 Example:
@@ -42,4 +40,4 @@ var hbs = exphbs.create({
 	}
 });
 ```
-#License MIT
+##License MIT
