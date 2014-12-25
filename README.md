@@ -1,7 +1,7 @@
 handlebars-plugin-grouping
 ==========================
 
-A grouping iterator plugin to group collections into groups of definable size.
+A handlebars grouping iterator plugin to group collections into groups of definable size.
 
 ##Template Usage
 
