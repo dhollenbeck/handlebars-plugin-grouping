@@ -1,24 +1,25 @@
 handlebars-plugin-grouping
 ==========================
 
-A grouping iterator handlebars plugin to group collections into groups of definable size.
+A grouping iterator plugin to group collections into groups of definable size.
 
 #Template Usage
 
 ```html
-	{{!-- an example template to render a collection of thumbnails in a bootstrap grid row of 6 thumbnails per row. --}}
+{{!-- an example template to render a collection of thumbnails
+into a bootstrap grid row of 6 thumbnails per row. --}}
 
-	{{#grouping thumbnails 6}}
-	<div class="row">
-		<div class="row-fluid" title="Row {{@index}} of {{@groups}} contains {{@size}} thumbnails.">
-			{{#each this}}
-				<div class="col-md-2">
-					<img id="thumbnail-{{id}}" src="{{src}}" title="{{title}}"/>
-				</div>
-			{{/each}}
-		</div>
+{{#grouping thumbnails 6}}
+<div class="row">
+	<div class="row-fluid" title="Row {{@index}} of {{@groups}} contains {{@size}} thumbnails.">
+		{{#each this}}
+			<div class="col-md-2">
+				<img id="thumbnail-{{id}}" src="{{src}}" title="{{title}}"/>
+			</div>
+		{{/each}}
 	</div>
-	{{/grouping}}
+</div>
+{{/grouping}}
 ```
 
 
@@ -27,17 +28,18 @@ A grouping iterator handlebars plugin to group collections into groups of defina
 Installation:
 
 ```javascript
-	npm install handlebars-plugin-grouping --save
-``
+npm install handlebars-plugin-grouping --save
+```
 Example:
 
 ```javascript
-	var grouping = require('handlebars-plugin-grouping');
-	var exphbs  = require('express-handlebars');
+var grouping = require('handlebars-plugin-grouping');
+var exphbs  = require('express-handlebars');
 
-	var hbs = exphbs.create({
-		helpers: {
-			grouping: grouping
-		}
-	});
+var hbs = exphbs.create({
+	helpers: {
+		grouping: grouping
+	}
+});
 ```
+#License MIT
