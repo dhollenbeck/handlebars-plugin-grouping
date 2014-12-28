@@ -1,6 +1,6 @@
 {
   "name": "handlebars-plugin-grouping",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A handlebars grouping iterator plugin to group collections into groups of definable size.",
   "main": "index.js",
   "dependencies": {

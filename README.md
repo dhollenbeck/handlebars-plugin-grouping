@@ -40,4 +40,14 @@ var hbs = exphbs.create({
 	}
 });
 ```
+
+##Browser
+
+Load the script after the handlebars runtime.
+
+```html
+<script type="text/javascript" src=".../handlebars.runtime.js"></script>
+<script type="text/javascript" src=".../handlebars-plugin-grouping.js"></script>
+```
+
 ##License MIT
